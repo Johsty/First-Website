@@ -1,12 +1,52 @@
 <!doctype html>
 <html lang="en">
+
+
+<!--
+I do not know why in this version and the last version of this website the drop down #panel does not work.
+It's strange to me because it's formatted exactly the same way #flip is, and that works perfectly.
+I've spent about an hour looking for any formatting error I may have made but I can't find any.
+This version of the website is all in one file and with the scripts moved up, the other version uses style.css and scripts.js
+I did this in hopes of finding out where I made an error, but I never found anything.
+-->
+
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+      });
+    });
+    </script>
+    <style>
+      body {
+          background-color: #66ccff;
+      }
+      .container {
+        width: 65%;
+        background-color: white;
+      }
+      #panel, #flip {
+        padding: 5px;
+        text-align: center;
+        background-color: #66ccff;
+        border: solid 1px black;
+      }
+      #panel {
+        padding: 50px;
+        display: none;
+      }
+      </style>
     <title>Hello, world!</title>
   </head>
   <body>
@@ -19,18 +59,8 @@
     This website taught me how to use Github. However, I'm not sure if the way I am pushing commits is the best way. I'm using Github desktop and I've been commiting by saving the file into my local repository and pushing that way. It seems to be working for me, but I'm not sure if there is a more efficient method.
     </div>
     <a href="https://github.com/Johsty" > My Github page. </a>
-    <style>
-    body {
-        background-color: #66ccff;
-    }
-    </style>
     <h1> </h1>
     <img src="https://cdn.discordapp.com/attachments/530601321234169866/752317560950751273/50998041.png">
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="scripts.js"></script>
   </body>
 </html>
